@@ -1,0 +1,36 @@
+//
+//  PrefixHeader.pch
+//  视频音频-Demo
+//
+//  Created by stkcctv on 16/8/25.
+//  Copyright © 2016年 stkcctv. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "JGMusicManager.h"
+#import "UIImageView+WebCache.h"
+
+#import "AFNetworking.h"
+
+//网络请求
+#import "JGNetWorkRequestManager.h"
+
+// 网址
+#define kMusicUrl @"http://mobile.ximalaya.com/mobile/others/ca/album/track/5541/true/1/15"
+#define kVedioUrl @"http://route.showapi.com/255-1"
+
+// 占位图
+#define kPlaceHolder @"3.jpg"
+
+
+#ifdef DEBUG
+#define JGLog(...) NSLog(__VA_ARGS__)
+#else
+#define JGLog(...)
+#endif
+#define JGLogFunc JGLog(@"%s",__func__);
+
+
+#endif /* PrefixHeader_pch */
